@@ -1,0 +1,13 @@
+- name: install tomcat
+  become: yes
+  get_url: 
+     url: https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.zip
+     dest: /home/sathish/tomcat
+
+- name: unzip tomcat
+  become: yes
+  unarchive:
+       src: /home/sathish/tomcat/apache-tomcat-8.5.24.zip
+       dest: /home/sathish/tomcat  
+
+

@@ -1,0 +1,14 @@
+- hosts: test
+  roles:
+       - tomcat    
+       - aws-cli
+       - git
+       - maven
+       - redis
+       - mysql
+       - jenkins
+       - mongodb
+       - monit
+       - nagios
+
+

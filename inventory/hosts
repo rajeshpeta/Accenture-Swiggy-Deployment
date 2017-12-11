@@ -1,0 +1,7 @@
+[test]
+localhost ansible_connection=local
+13.127.53.74
+
+[test:vars]
+Java-version=openjdk-8-jdk
+

@@ -1,0 +1,3 @@
+- name: install java
+  become: yes
+  apt: name= {{java-version}} state=present
